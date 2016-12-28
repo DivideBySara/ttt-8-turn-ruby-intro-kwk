@@ -1,1 +1,12 @@
 #!/usr/bin/env ruby
+require_relative '../lib/turn'
+require_relative '../../ttt-1-welcome-rb-ruby-intro-kwk/lib/welcome'
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+move(board, 4, "X")
+move(board, 0, "O")
+move(board, 1, "X")
+
+display_board(board)
+turn(board)
